@@ -1,0 +1,83 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "b34689ba05a8e538a3ce",
+  "publicPath": "/static/",
+  "outputPath": "/Users/manny/Desktop/react-frontity-wordpress-app/build/static",
+  "assetsByChunkName": {
+    "react-frontity-wordpress-app": "react-frontity-wordpress-app.module.js"
+  },
+  "assets": [
+    {
+      "name": "react-frontity-wordpress-app.module.js",
+      "size": 6139807,
+      "chunks": [
+        "react-frontity-wordpress-app"
+      ],
+      "chunkNames": [
+        "react-frontity-wordpress-app"
+      ],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "react-frontity-wordpress-app": {
+      "chunks": [
+        "react-frontity-wordpress-app"
+      ],
+      "assets": [
+        "react-frontity-wordpress-app.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "react-frontity-wordpress-app": {
+      "chunks": [
+        "react-frontity-wordpress-app"
+      ],
+      "assets": [
+        "react-frontity-wordpress-app.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "react-frontity-wordpress-app",
+      "rendered": false,
+      "initial": true,
+      "entry": true,
+      "size": 1504952,
+      "names": [
+        "react-frontity-wordpress-app"
+      ],
+      "files": [
+        "react-frontity-wordpress-app.module.js"
+      ],
+      "hash": "af2860c33b631cbf049a",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": [],
+  "generator": "loadable-components"
+}
