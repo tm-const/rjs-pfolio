@@ -6,20 +6,24 @@ import Featured from "./Featured"
 
 const Post = ( {state, element, imgID} ) => {
     const data = state.source.get(state.router.link);
-    const movies = state.source[data.type][data.id];
+    const post = state.source[data.type][data.id];
 
     if(element === 'movie') {
+        const movieC = post.categories[0];
+        const movieCategories = state.source.category[movieC];
+
         return (
             <>
                 <Link href="/movies" exact>Back</Link>
 
                 <Featured 
-                    imgID={movies.featured_media} 
+                    imgID={post.featured_media} 
                     element="movies"
                 ></Featured>
 
-                <h2 dangerouslySetInnerHTML={{__html: movies.title.rendered}}></h2>
-                <div dangerouslySetInnerHTML={{__html: movies.content.rendered}}></div>
+                <h2 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h2>
+                <span>Category: {movieCategories.name}</span>
+                <div dangerouslySetInnerHTML={{__html: post.content.rendered}}></div>
             </>
         )
     } else {

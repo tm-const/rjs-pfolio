@@ -7,7 +7,7 @@ import Search from "../components/Search";
 const Movies = ({state, actions}) => {
     
     const data = state.source.get(state.router.link);
-    console.log(state.source)
+    
     // Set Movie objects into an array to iterate through
     // This will allow you to set the values into an Array
     const allMovies = Object.values(state.source.movies);
@@ -27,16 +27,21 @@ const Movies = ({state, actions}) => {
         <Search />
 
         <hr />
+
         { !filterMovies.length > 0 && <p>No results found matching: {state.theme.searchInputValue}</p>}
         { filterMovies.reverse().map( (movie) => {
+
+          const movieC = movie.categories[0];
+          const movieCategories = state.source.category[movieC];
           
+
           return(
             <>
               <Link href={movie.link}>
                   <h2 key={movie.id}>{movie.title.rendered}</h2>
               </Link>
+              <p>Category: {movieCategories.name}</p>
             </>
-            
           )
         }) }
 

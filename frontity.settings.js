@@ -22,6 +22,13 @@ const settings = {
               endpoint: "movies", // REST API endpoint
               archive: "/movies" // link where this custom posts are listed
             }
+          ],
+          taxonomies: [
+            {
+              taxonomy: "developers", // taxonomy slug
+              endpoint: "developers", // REST API endpoint
+              postTypeEndpoint: "movies", // endpoint from which posts from this taxonomy are fetched
+            }
           ]
         }
       }
