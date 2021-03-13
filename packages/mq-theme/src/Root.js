@@ -3,6 +3,7 @@ import {connect} from "frontity";
 import Header from "./components/Header";
 import Post from "./components/Post";
 import Movies from "./Pages/Movies";
+import Base from "./styles/Base"
 
 const Root = ({state, actions}) => {
 
@@ -15,8 +16,8 @@ const Root = ({state, actions}) => {
 
     return(
       <>
+        <Base />
         <Header />
-        <hr />
         {data.isFetching && <p>Fetching...</p>}
         {data.isHome && <p>We are Home</p>}
         {data.isMovies && <Post element="movie"/>}
