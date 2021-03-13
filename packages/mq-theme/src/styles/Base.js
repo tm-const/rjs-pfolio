@@ -1,10 +1,13 @@
 import React from  "react";
-import {Global, css} from "frontity";
+import {connect, Global, css} from "frontity";
 
-const Base = () => {
+const Base = ({state}) => {
+
+    const {isDarkModeOn} = state.theme;
 
     // Literal Strings
-    const mainBlack = '#4a4a4a';
+    const mainWhite = '#FFFFFF';
+    const mainBlack = '#000000';
     const mainRed = '#f2322b';
 
     return (
@@ -18,10 +21,12 @@ const Base = () => {
                 body {
                     margin:0;
                     padding:0;
+                    background-color: ${isDarkModeOn === true ? mainBlack: mainWhite};
+                    color:${isDarkModeOn === true ? mainWhite: mainBlack};
                 }
                 a {
                     font-weight: bolder;
-                    color: ${mainBlack};
+                    color:${isDarkModeOn === true ? mainWhite: mainBlack};
                     text-decoration:none;
                 }
                 a:hover {
@@ -31,9 +36,12 @@ const Base = () => {
                 .nav-logo {
                     width:100px;
                 }
+                .dark-mode-text-state {
+                    color:${isDarkModeOn === true ? mainWhite : mainBlack};
+                }
             `}
         />
     ) 
 }
 
-export default Base
+export default connect(Base)

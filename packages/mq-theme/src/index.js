@@ -10,6 +10,7 @@ export default {
     theme: {
       counter: 0,
       searchInputValue: '',
+      isDarkModeOn: true,
     }
   },
   actions: {
@@ -19,6 +20,12 @@ export default {
       },
       setSearchInputValue: ({state}) => value => {
         state.theme.searchInputValue = value;
+      },
+      setDarkModeOn: ({state}) => {
+        state.theme.isDarkModeOn = true;
+      },
+      setDarkModeOff: ({state}) => {
+        state.theme.isDarkModeOn = false;
       }
     }
   }

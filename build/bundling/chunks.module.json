@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "1517e8adedfc56787954",
+  "hash": "bd139fd38a63f0dd6925",
   "publicPath": "/static/",
   "outputPath": "/Users/manny/Desktop/react-frontity-wordpress-app/build/static",
   "assetsByChunkName": {
     "react-frontity-wordpress-app": [
       "react-frontity-wordpress-app.module.js",
-      "react-frontity-wordpress-app.950b302fb15c8eb2439b.hot-update.js"
+      "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "950b302fb15c8eb2439b.hot-update.json",
+      "name": "5e76e80c454c9758ac1a.hot-update.json",
       "size": 70,
       "chunks": [],
       "chunkNames": [],
@@ -34,8 +34,28 @@
       "emitted": false
     },
     {
-      "name": "react-frontity-wordpress-app.950b302fb15c8eb2439b.hot-update.js",
-      "size": 12687,
+      "name": "images/night.svg",
+      "size": 970,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/mq-theme/src/assets/night.svg"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/sun.svg",
+      "size": 10307,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/mq-theme/src/assets/sun.svg"
+      },
+      "emitted": false
+    },
+    {
+      "name": "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js",
+      "size": 7899,
       "chunks": [
         "react-frontity-wordpress-app"
       ],
@@ -50,7 +70,7 @@
     },
     {
       "name": "react-frontity-wordpress-app.module.js",
-      "size": 6157527,
+      "size": 6171481,
       "chunks": [
         "react-frontity-wordpress-app"
       ],
@@ -69,7 +89,7 @@
       ],
       "assets": [
         "react-frontity-wordpress-app.module.js",
-        "react-frontity-wordpress-app.950b302fb15c8eb2439b.hot-update.js"
+        "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -82,7 +102,7 @@
       ],
       "assets": [
         "react-frontity-wordpress-app.module.js",
-        "react-frontity-wordpress-app.950b302fb15c8eb2439b.hot-update.js"
+        "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -94,15 +114,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1515154,
+      "size": 1520716,
       "names": [
         "react-frontity-wordpress-app"
       ],
       "files": [
         "react-frontity-wordpress-app.module.js",
-        "react-frontity-wordpress-app.950b302fb15c8eb2439b.hot-update.js"
+        "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
       ],
-      "hash": "b099b6892a7a50313626",
+      "hash": "43b1ee3b09c0d9a75937",
       "siblings": [],
       "parents": [],
       "children": [],
