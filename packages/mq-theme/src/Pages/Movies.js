@@ -1,74 +1,45 @@
 import React from "react";
-import {connect} from "frontity";
-import Link from "../components/Link";
-import Featured from "../components/Featured";
+import { connect, styled, css } from "frontity";
 import Search from "../components/Search";
+import Archives from "../components/Archives";
+
 
 const Movies = ({state, actions}) => {
-    
-    const data = state.source.get(state.router.link);
-    
-    // Set Movie objects into an array to iterate through
-    // This will allow you to set the values into an Array
-    const allMovies = Object.values(state.source.movies);
-    const filterMovies = allMovies.filter((movie) => movie.title.rendered.toLowerCase().includes(state.theme.searchInputValue.toLowerCase()))
 
     return(
       <>
-        <h2>Video</h2>
-        <p>There ios somethio9ng here that will show for the mioviue.</p>
-        <p>There are ({data.items.length})</p>
+      <MainArchiveWrapper>
 
-        <pre>Contador: {state.theme.counter}</pre>
-        <button onClick={actions.theme.setPlusCounter}>Add 1</button>
+          <Search />
+          <Archives />
 
-        <hr />
+        </MainArchiveWrapper>
 
-        <Search />
+        <MainContentWrapper>
 
-        <hr />
+          test
 
-        { !filterMovies.length > 0 && <p>No results found matching: {state.theme.searchInputValue}</p>}
-        { filterMovies.reverse().map( (movie) => {
-
-          const movieC = movie.categories[0];
-          const movieCategories = state.source.category[movieC];
-          
-
-          return(
-            <>
-              <Link href={movie.link}>
-                  <h2 key={movie.id}>{movie.title.rendered}</h2>
-              </Link>
-              <p>Category: {movieCategories.name}</p>
-            </>
-          )
-        }) }
-
-        <hr />
-
-        <h3>Static Old Data below</h3>
-
-
-        { data.items.map( ({id}) => {
-          
-          const movies = state.source.movies[id];
-
-          return(
-            <div key={id}>
-              <Link href={movies.link} exact>
-                <Featured imgID={movies.featured_media} element="movies"></Featured>
-                <h2 dangerouslySetInnerHTML={{__html: "Post title: " + movies.title.rendered }}></h2>
-              </Link>
-                <span dangerouslySetInnerHTML={{ __html: movies.excerpt.rendered }}></span>
-                <p>Company: {movies.acf.company || "None"}</p>
-                <p>Crypto EXchanges: {movies.acf.crypto}</p>
-              <hr />
-            </div>
-          )
-        }) }
+        </MainContentWrapper>
       </>
     )
 }
+
+const MainArchiveWrapper = styled.div`
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-direction:column;
+
+  width:49%;
+`;
+
+const MainContentWrapper = styled.div`
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-direction:column;
+
+  width:49%;
+`;
 
 export default connect(Movies);

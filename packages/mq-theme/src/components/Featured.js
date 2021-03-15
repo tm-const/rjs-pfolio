@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "frontity";
+import { connect, styled, css } from "frontity";
 
 
 const Featured = ({ state, imgID, element }) => {
@@ -8,9 +8,13 @@ const Featured = ({ state, imgID, element }) => {
 
     return element === 'movies' && (
         <>
-            <img src={movie.media_details.sizes.medium_large.source_url} alt={movie.alt_text}/>
+            <FeaturedImage src={movie.media_details.sizes.medium_large.source_url} alt={movie.alt_text} />
         </>
     )   
 }
+
+const FeaturedImage = styled.img`
+    width:100%;
+`;
 
 export default connect(Featured);

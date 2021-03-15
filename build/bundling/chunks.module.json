@@ -2,27 +2,13 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "bd139fd38a63f0dd6925",
+  "hash": "da8a930bced829b690d6",
   "publicPath": "/static/",
   "outputPath": "/Users/manny/Desktop/react-frontity-wordpress-app/build/static",
   "assetsByChunkName": {
-    "react-frontity-wordpress-app": [
-      "react-frontity-wordpress-app.module.js",
-      "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
-    ]
+    "react-frontity-wordpress-app": "react-frontity-wordpress-app.module.js"
   },
   "assets": [
-    {
-      "name": "5e76e80c454c9758ac1a.hot-update.json",
-      "size": 70,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
     {
       "name": "images/cc.png",
       "size": 70791,
@@ -54,23 +40,8 @@
       "emitted": false
     },
     {
-      "name": "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js",
-      "size": 7899,
-      "chunks": [
-        "react-frontity-wordpress-app"
-      ],
-      "chunkNames": [
-        "react-frontity-wordpress-app"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "react-frontity-wordpress-app.module.js",
-      "size": 6171481,
+      "size": 6198942,
       "chunks": [
         "react-frontity-wordpress-app"
       ],
@@ -88,8 +59,7 @@
         "react-frontity-wordpress-app"
       ],
       "assets": [
-        "react-frontity-wordpress-app.module.js",
-        "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
+        "react-frontity-wordpress-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -101,8 +71,7 @@
         "react-frontity-wordpress-app"
       ],
       "assets": [
-        "react-frontity-wordpress-app.module.js",
-        "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
+        "react-frontity-wordpress-app.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -114,15 +83,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1520716,
+      "size": 1542970,
       "names": [
         "react-frontity-wordpress-app"
       ],
       "files": [
-        "react-frontity-wordpress-app.module.js",
-        "react-frontity-wordpress-app.5e76e80c454c9758ac1a.hot-update.js"
+        "react-frontity-wordpress-app.module.js"
       ],
-      "hash": "43b1ee3b09c0d9a75937",
+      "hash": "7876c267404f33ec4fe4",
       "siblings": [],
       "parents": [],
       "children": [],
